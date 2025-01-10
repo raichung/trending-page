@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Card } from "../components/ui/card";
+import Image from "next/image";
 
 interface CourseCardProps {
   number: string;
@@ -39,30 +40,38 @@ function CourseCard({
             <div className="flex flex-col h-full justify-between bg-[#c23a3a] text-white p-8">
               <div className="flex justify-center gap-4 my-8">
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     src="https://img.icons8.com/?size=100&id=eXYS9lpSOpd5&format=png&color=000000"
                     alt="React"
+                    width={100}
+                    height={100} 
                     className="w-36 h-36"
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     src="https://img.icons8.com/?size=100&id=rY6agKizO9eb&format=png&color=000000"
                     alt="Vue"
+                    width={100}
+                    height={100}
                     className="w-36 h-36"
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     src="https://img.icons8.com/?size=100&id=SkbzwdwhI2sy&format=png&color=000000"
                     alt="Social Media"
+                    width={100}
+                    height={100}
                     className="w-36 h-36"
                   />
                 </div>
                 <div className="flex flex-col items-center">
-                  <img
+                  <Image
                     src="https://img.icons8.com/?size=100&id=18706&format=png&color=000000"
                     alt="Design"
+                    width={100}
+                    height={100}
                     className="w-36 h-36"
                   />
                 </div>
@@ -142,24 +151,32 @@ export default function CourseStats() {
           className="w-[650px] h-[600px] rounded-3xl"
           icons={
             <>
-              <img
+              <Image
                 src="/placeholder.svg?height=40&width=40"
                 alt="React"
+                width={40}
+                height={40}
                 className="h-10 w-10"
               />
-              <img
+              <Image
                 src="/placeholder.svg?height=40&width=40"
                 alt="Social"
+                width={40}
+                height={40}
                 className="h-10 w-10"
               />
-              <img
+              <Image
                 src="/placeholder.svg?height=40&width=40"
                 alt="Vue"
+                width={40}
+                height={40}
                 className="h-10 w-10"
               />
-              <img
+              <Image
                 src="/placeholder.svg?height=40&width=40"
                 alt="Design"
+                width={40}
+                height={40}
                 className="h-10 w-10"
               />
             </>

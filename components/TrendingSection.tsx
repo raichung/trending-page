@@ -17,7 +17,6 @@ function CourseCard({
   number,
   title,
   description,
-  icons,
   showViewAll,
   className,
 }: CourseCardProps) {
